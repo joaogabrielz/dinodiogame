@@ -1,5 +1,5 @@
 # Dino_Dio_Game 
-<img align="center" height="150" width="180" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Dino_non-birthday_version.gif">
+<img align="center" height="150" width="250" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Dino_non-birthday_version.gif">
 
 ### Projeto replica do famoso jogo do dino 👈
    ###    Tecnologias usadas 👈
