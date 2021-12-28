@@ -6,6 +6,7 @@
 
 ### # Como Jogar:
   - Comandos: Click ou Espaço = Pular
+      - Caso Perder ou Ganhar Pressione Novamente para <strong> reiniciar</strong> o jogo
   - Objetivo do Jogo é o dinossauro estudante da DIO escapar da procastinação das redes sociais e notificações
          para continuar Estudando e se tornar um Otimo Profissional
 
