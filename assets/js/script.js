@@ -15,6 +15,7 @@ let winner = 0;
 
 pontos.style.textAlign = 'right'
 pontos.style.marginRight = '5%'
+pontos.innerHTML = `placar:${winner}`
 
 function anim_dino_handle_Keyup(event) {
   //ver se a telca pressionado é 32 = espaço .. (site keycode.info codigo das teclas)
@@ -80,8 +81,10 @@ function createObstacles(){
             clearInterval(leftInterval);
             background.removeChild(obstacles)
 
-            winner += 40;
-            pontos.innerHTML = `placar:${winner}`
+          
+              winner += 10
+              pontos.innerHTML = `placar:${winner}`
+          // pontos.innerHTML = `placar:${winner}`
         }
         else if(obstacles_Position > 0 && obstacles_Position < 60    && position < 60)//se nessa regiao ele esta na area do 'dino' entao gameover
         {
@@ -89,20 +92,23 @@ function createObstacles(){
             clearInterval(leftInterval);
             gamestop = true;
            document.body.innerHTML = '<h1 class=game-over>Fim de Jogo</h1>'
+           document.body.innerHTML += `<h6 class='game-over pFinal'>Placar Final:${winner}</h6>`
+         
           
         }
         else{
-          obstacles_Position -= 10; //alteração da dificuldade dos obstaculos ate o 'dino'
+          obstacles_Position -= 7; //alteração da dificuldade dos obstaculos ate o 'dino'
           obstacles.style.left = obstacles_Position + 'px'  
         }
-          if(winner >= 500){
-            obstacles_Position -= 5; //alteração da dificuldade dos obstaculos ate o 'dino'
+          if(winner >= 50){
+            obstacles_Position -= 1; //alteração da dificuldade dos obstaculos ate o 'dino'
     
           }
-          if(winner >= 2000){
+          if(winner >= 100){
             clearInterval(leftInterval);
             gamestop = true;
             document.body.innerHTML = '<h1 class=game-over>Voce Venceu</h1>'
+            document.body.innerHTML += `<h6 class='game-over pFinal'>Placar Final:${winner}</h6>`
           }
             
      },20)

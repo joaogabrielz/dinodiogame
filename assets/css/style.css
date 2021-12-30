@@ -31,6 +31,10 @@ body{
     color: #313131;
     font-family: Arial, Helvetica, sans-serif;
 }
+.pFinal{
+    font-size: 2rem;
+}
+
 .background {
     position: absolute;
     bottom: 0;
@@ -51,7 +55,7 @@ body{
 }
 @media screen and (max-width:700px){
     h1{
-        border: 1px solid white;
+       margin-top: 30%;
     }
 }
  
