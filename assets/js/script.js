@@ -67,13 +67,18 @@ function jump() {
 
 function createObstacles(){
     const obstacles = document.createElement('div')
-    let obstacles_Position = 1300;
+    let obstacles_Position = 1200;
     let randomTime = Math.random() * 6000;
 
-   // console.log(randomTime)
+   // console.log(randomTime)s
     obstacles.classList.add('obstacles');
-    obstacles.style.left = 1300 + 'px';
+    obstacles.style.left = 1200 + 'px';
+
+    if(randomTime == randomTime){
+      randomTime += 200 
+    }
     background.appendChild(obstacles);
+   // background.appendChild(obstacles);
 
     let leftInterval = setInterval(() => {
     
